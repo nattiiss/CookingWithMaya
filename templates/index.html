@@ -27,8 +27,21 @@
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </p>
     <h2>Other Information</h2>
-    <p>ToDo</p>
+    <!--<p>{{cakes}}</p>-->
     <div>
+      {%for cake in cakes %}
+      <div>
+    
+      <h4>{{cake['title']}}</h4>
+        <div>Recipes: {{cake['recipe']}}</div>
+      </div>
+      {% endfor %}
+
+  <button type="button" class="btn btn-outline-primary"> Read </button>
+    </div>
+   
+      <br>
+      
       <button>Contuct us</button>
     </div>
     
