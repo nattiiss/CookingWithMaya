@@ -1,35 +1,21 @@
-from flask import Flask, render_template, jsonify
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
-Cakes = [{
-  'id': 1,
-  'title': 'cake1',
-  'recipe': 'recipe 1'
-}, {
-  'id': 2,
-  'title': 'cake2',
-  'recipe': 'recipe 2'
-}, {
-  'id': 3,
-  'title': 'cake3',
-  'recipe': 'recipe 3'
-}]
 
-
-@app.route("/")
+@app.route('/')
 def home():
-  return render_template('index.html', cakes=Cakes)
+  return render_template('index.html')
 
 
-@app.route("/api/cakes")
-def list_cake():
-  return jsonify(Cakes)
+@app.route('/recipes/')
+def recipes():
+  return render_template('recipes.html')
 
 
-@app.route('/recipies')
-def recipies():
-  return 'recipies.html'
+@app.route('/about/')
+def about():
+  return render_template('about.html')
 
 
 if __name__ == "__main__":

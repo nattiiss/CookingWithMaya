@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-    scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
         <title>Cooking with Maya</title> 
    
       </head>
@@ -13,31 +14,38 @@
         font-size: 80px;
       }
 
+
+   h2{
+        font-size: 35px;
+      font-family: Brush Script MT, serif;
+      }
+
+
+   div[class="float-child-2"] h2 {
+        font-size: 35px;
+      font-family: Brush Script MT, serif;
+     float: right;
+      }
+
    #image1{
      width: 30%;
      height: 30%;
      float: left;
-     padding-right: 15px; 
+     padding-right: 30px; 
    }
 
    #image2{
      width: 30%;
      height: 30%;
      float: right;
-     padding-right: 15px; 
+     padding-left: 30px; 
    }
 
    #image3{
      width: 30%;
      height: 30%;
      float: left;
-     padding-right: 15px; 
-   }
-
-   #banner {
-     width: 65%;
-     height: 300px;
-     margin-left: 15%;
+     padding-right: 30px; 
    }
 
       #container{
@@ -50,7 +58,7 @@ div[class="float-child-1"] {
     max-width: 70%;
     max-height: none;
     margin-left: 10%;
-    margin-top: 10%;
+    margin-top: 5%;
     margin-bottom: 5px;
   background-color: white;
     float: left;
@@ -63,18 +71,8 @@ div[class="float-child-2"] {
     margin-bottom: 5px;
   background-color: white;
     float: left;
+}
 
-} 
-
-   div[class="float-child-3"] {
-   max-width: 70%;
-    max-height: none;
-    margin-left: 10%;
-    margin-bottom: 5px;
-  background-color: white;
-    float: left;
-
-} 
 
    p {
             font-family: 'Times New Roman', Times, serif;
@@ -100,14 +98,15 @@ a {
 }
 
    ul {
+     font-weight: bolder; 
   list-style-type: none;
-     max-width: 70%;
-     margin-left: 10%;
-     margin-top: 70px;
+     max-width: 80%;
+     margin-left: 6%;
+     margin-top: 110px;
   overflow: hidden;
   background-color: white;
-     border-top: 2px solid;
-     border-bottom: 2px solid;
+     border-top: 3px solid;
+     border-bottom: 3px solid;
 }
 
 li {
@@ -123,6 +122,7 @@ li a {
   text-decoration: none;
   font-family: 'Times New Roman', Times, serif;
 }
+
     </style>
   <!-- float:right - for moving image right->
    #banner{
@@ -136,17 +136,17 @@ li a {
   <body>
 
   <!--Navigation Bar -->  
-    <img id="banner" src="https://CookingWithMaya.nattiiss.repl.co/static/Background.jpg"> 
+   
 <ul>
-  <li><a href="https://cookingwithmaya.nattiiss.repl.co/">Home</a></li>
-  <li><a href="https://cookingwithmaya.nattiiss.repl.co/">About Me</a></li>
-  <li><a href="https://recipes.nattiiss.repl.co">Recipes</a></li>
-  <li><a href="https://cookingwithmaya.nattiiss.repl.co/">Contact</a></li>
+  <li><a href="https://cookingwithmaya.nattiiss.repl.co/">HOME</a></li>
+  <li><a href="https://cookingwithmaya.nattiiss.repl.co/recipes/">ALL RECIPES</a></li>
+  <li><a href="https://cookingwithmaya.nattiiss.repl.co/about/">ABOUT</a></li>
+  <li><a href="https://cookingwithmaya.nattiiss.repl.co/contact/">CONTACT</a></li>
 </ul>
-    
+  
 
             <div class="float-child-1">
-              <h2>Chocolate Cakes</h2>
+              <h2>Best Brunch Recipes</h2>
     
     <p>
       <img id="image1" src="https://CookingWithMaya.nattiiss.repl.co/static/Cakes.jpg">  
@@ -155,13 +155,19 @@ li a {
             </div>
 
             <div class="float-child-2">
-              <h2>White Cakes</h2> 
+            <h2>Easy Chocolate Cake Recipes</h2> 
+        <br></br>
+        <br></br>
+             
     <p>
-      <img id="image2" src="https://CookingWithMaya.nattiiss.repl.co/static/ChocolateCake.jpg"> 
+      <img id="image2" src="https://CookingWithMaya.nattiiss.repl.co/static/cakes_20.jpg"> 
+     
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </p>
-            </div>        
+            </div>    
 
+
+    <!-- 
     <div class="float-child-3">
               <h2>Sirup</h2> 
     <p>
@@ -169,6 +175,6 @@ li a {
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </p>
                
-            </div> 
+            </div>  -->
   </body>
 </html>
