@@ -18,13 +18,18 @@ Cakes = [{
 
 
 @app.route("/")
-def hello_world():
+def home():
   return render_template('index.html', cakes=Cakes)
 
 
 @app.route("/api/cakes")
 def list_cake():
   return jsonify(Cakes)
+
+
+@app.route('/recipies')
+def recipies():
+  return 'recipies.html'
 
 
 if __name__ == "__main__":
