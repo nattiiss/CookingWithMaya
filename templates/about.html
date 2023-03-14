@@ -9,7 +9,7 @@
   <style>
     
 
-div {
+div[id="about"] {
    max-width: 70%;
     max-height: none;
     margin-left: 10%;
@@ -32,31 +32,54 @@ div {
       margin-left: 10%;
       margin-top: 80px;
       }
-  ul {
-     font-weight: bolder; 
-  list-style-type: none;
-     max-width: 80%;
-     margin-left: 6%;
-     margin-top: 110px;
-  overflow: hidden;
-  background-color: white;
-     border-top: 3px solid;
-     border-bottom: 3px solid;
+  
+#nav{
+  max-width: 80%;
+  margin-top: 5%;
+  margin-left: 8%;
+  padding: 16px;
+  background: white;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
 }
 
-li {
-  float: left;
+#nav label, #hamburger{
+  display: none;
 }
-
-li a {
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 9px 70px;
+ 
+#list a {
+     color: black;
+     font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder; 
+     text-decoration: none;
+     text-align: center;
+     padding: 12px 100px;
   padding-left: 150px;
-  text-decoration: none;
-  font-family: 'Times New Roman', Times, serif;
+   }
+
+
+@media screen and (max-width: 992px){
+     #list {
+       display: block;
+     }
+#list a {
+display: block;
+width: 100%;
 }
+  
+#nav label {
+padding: 15px;
+display: inline-block;
+background: black;
+color: white; 
+}
+
+  #list {
+    display: none;
+  }
+
+  #nav input:checked ~ #list {display: block;}
+   }
 
     h1{
       font-size: 70px;
@@ -77,14 +100,18 @@ li a {
 
   </style>
   <body>
-    <ul>
-  <li><a href="https://cookingwithmaya.nattiiss.repl.co/">HOME</a></li>
-  <li><a href="https://cookingwithmaya.nattiiss.repl.co/recipes/">ALL RECIPES</a></li>
-  <li><a href="https://cookingwithmaya.nattiiss.repl.co/about/">ABOUT</a></li>
-  <li><a href="https://cookingwithmaya.nattiiss.repl.co/contact/">CONTACT</a></li>
-</ul>
+    <nav id="nav">
+    <label for="hamburger">&#9776;</label>
+    <input type="checkbox" id="hamburger"/>
+<div id="list">
+  <a href="https://cookingwithmaya.nattiiss.repl.co/">HOME</a>
+  <a href="https://cookingwithmaya.nattiiss.repl.co/recipes/">ALL RECIPES</a>
+  <a href="https://cookingwithmaya.nattiiss.repl.co/about/">ABOUT</a>
+  <a href="https://cookingwithmaya.nattiiss.repl.co/contact/">CONTACT</a>
+</div>
+    </nav>
 
-     <div>
+     <div id="about">
               <h1>ABOUT ME</h1>
     
     <p>

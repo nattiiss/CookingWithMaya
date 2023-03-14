@@ -10,7 +10,58 @@
       </head>
   
  <style>
-      h1{
+   
+#nav{
+  max-width: 80%;
+  margin-top: 5%;
+  margin-left: 8%;
+  padding: 16px;
+  background: white;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+}
+
+ #nav label, #hamburger{
+  display: none;
+}
+
+ 
+#list a {
+     color: black;
+     font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder; 
+     text-decoration: none;
+     text-align: center;
+     padding: 12px 100px;
+  padding-left: 150px;
+   }
+
+
+@media screen and (max-width: 992px){
+     #list {
+       display: block;
+     }
+#list a {
+display: block;
+width: 100%;
+}
+  
+#nav label {
+padding: 15px;
+display: inline-block;
+background: black;
+color: white;  
+}
+
+  #list {
+    display: none;
+  }
+
+  #nav input:checked ~ #list {display: block;}
+   }
+
+   
+h1{
         font-size: 80px;
       }
 
@@ -83,68 +134,21 @@ div[class="float-child-2"] {
             }
   
 
-   ul {
-     font-weight: bolder; 
-  list-style-type: none;
-     max-width: 80%;
-     margin-left: 6%;
-     margin-top: 110px;
-  overflow: hidden;
-  background-color: white;
-     border-top: 3px solid;
-     border-bottom: 3px solid;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 9px 70px;
-  padding-left: 150px;
-  text-decoration: none;
-  font-family: 'Times New Roman', Times, serif;
-}
-
     </style>
-  <!-- float:right - for moving image right->
-   #banner{
-      width: 80%;
-      height: 200px;
-      object-fit: cover;
-      margin-right: 15%;
-      margin-left: 60px;
-    }
-
-
-  a {
-	color: rgb(15, 14, 9);
-	display: inline-block;
-   	margin-right: 10px;
-	margin-bottom: 12px;
-	text-align:center;
-   	line-height: 25pt;
-	font-family: 'Times New Roman', Times, serif;
-  font-size: 15px;
-	font-size: large;
-	text-decoration: none;
-	white-space: nowrap;
-}
-  -->
+ 
   <body>
 
-  <!--Navigation Bar -->  
-   
-<ul>
-  <li><a href="https://cookingwithmaya.nattiiss.repl.co/">HOME</a></li>
-  <li><a href="https://cookingwithmaya.nattiiss.repl.co/recipes/">ALL RECIPES</a></li>
-  <li><a href="https://cookingwithmaya.nattiiss.repl.co/about/">ABOUT</a></li>
-  <li><a href="https://cookingwithmaya.nattiiss.repl.co/contact/">CONTACT</a></li>
-</ul>
-  
+    <nav id="nav">
+    <label for="hamburger">&#9776;</label>
+    <input type="checkbox" id="hamburger"/>
+<div id="list">
+  <a href="https://cookingwithmaya.nattiiss.repl.co/">HOME</a>
+  <a href="https://cookingwithmaya.nattiiss.repl.co/recipes/">ALL RECIPES</a>
+  <a href="https://cookingwithmaya.nattiiss.repl.co/about/">ABOUT</a>
+  <a href="https://cookingwithmaya.nattiiss.repl.co/contact/">CONTACT</a>
+</div>
+    </nav>
+
 
             <div class="float-child-1">
               <h2>Best Brunch Recipes</h2>
